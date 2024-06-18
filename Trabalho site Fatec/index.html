@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fatec Campinas</title>
+    <link rel="icon" type="image/x-icon" href="./icon-fatec.ico" />
+    <!-- Google fonts Lato -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CSS Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+    <!-- CSS do projeto -->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- JavaScript Bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script async defer crossorigin="anonymous"
+     src="https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v15.0" 
+     nonce="j00ghk0L">
+    </script>
+   </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar fixed-top">
+      <div class="container-fluid">
+        <img src="./logoSite2.png" class="img" alt="">
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" style="color: rgb(5, 0, 39);" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+          <span class="fa fa-reorder" style="color: rgb(5, 0, 39);"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Fatec Campinas</h5>
+            <button type="button" class="fa fa-close" data-bs-dismiss="offcanvas" aria-label="Close" style="color: #fff; background-color: rgb(5, 0, 39) ;"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#" style="color:rgb(255, 255, 255) ;"><i class="bi bi-house-fill"></i> Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: white ;">
+                  Institucional
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Aluno</a></li>
+                  <li><a class="dropdown-item" href="#">Docente</a></li>
+                  <li><a class="dropdown-item" href="#">Centro Paula Souza</a></li>
+                  <li><a class="dropdown-item" href="#">Contato</a></li>
+                  <li><a class="dropdown-item" href="#">Endereço</a></li>
+                  <li><a class="dropdown-item" href="#">Boletim FatecNews</a></li>
+                  <li><a class="dropdown-item" href="#">Regimento Fatec</a></li>
+                  <li><a class="dropdown-item" href="#">Plano de Desenvolvimento Institucional</a></li>
+                  <li><a class="dropdown-item" href="#">Sobre</a></li>
+                  <li><a class="dropdown-item" href="#">Eventos</a></li>
+                </ul>
+               <div> 
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: white ;">
+                    Concursos
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Processo Seletivo Simplificado para Docente</a></li>
+                    <li><a class="dropdown-item" href="#">Concurso Público para Docente</a></li>
+                    <li><a class="dropdown-item" href="#">Concurso Público para auxiliar Docente</a></li>
+                  </ul>
+                 <div> 
+              <li class="nav-item">
+                <a class="nav-link" href="#" style="color: white ;">Biblioteca</a>
+                <li class="nav-item">
+                  <a class="nav-link" href="#" style="color:white ;">CPA</a>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#" style="color: white ;">Eleição da Congregação</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: white ;">
+                  Graduação
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Cursos</a></li>
+                  <li><a class="dropdown-item" href="#">Estagios Supervisionados</a></li>
+                  <li><a class="dropdown-item" href="#">Iniciação Cientifica</a></li>
+                  <li><a class="dropdown-item" href="#">Trabalho de graduação</a></li>
+                  <li><a class="dropdown-item" href="#">Vestibular</a></li>
+                <div>
+                </ul>
+              </li>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: white ;">
+                Revista
+              </a>
+              <ul class="dropdown-menu" style="display: active">
+                <li><a class="dropdown-item" href="#">Revista Brasileira de Processos Químicos</a></li>
+                <li><a class="dropdown-item" href="#">Revista Brasileira em Tecnologia da Informação</a></li>
+             </li> 
+            </div>
+            <div class="contener_box">
+              <div class="cube">
+                <div class="cube">
+                  <p><h2>Cursos</h2></p>
+                  <div class="face face--front">Análise e Desenvolvimento de Sistemas</div>
+                  <div class="face face--right">Processos Químicos</div>
+                  <div class="face face--back">Gestão de Energia e Eficiência Energética</div>
+                  <div class="face face--left">Gestão da Tecnologia da Informação</div>
+                  <div class="face face--top">Gestão Empresarial</div>
+                  <p>  </p>
+                  <div class="face face--bottom"><h1>Fatec Campinas</h1></div>
+                </div>
+              </div>
+            </div>
+            <form class="d-flex mt-3" role="search">
+              <input class="form-control me-2" type="search" style="border-color: white-space"; placeholder="Digite o que procura" aria-label="Search">
+              <button type="button" class="btn btn-outline-light">Pesquisar</button>
+            </form>
+            <footer>
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel" style="font-size:35px; font-style:inherit;">Fatec Campinas</h5>
+            </footer>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- SLIDER -->
+    <div class="container" id="slider-container">
+      <div id="slider" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#slider"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#slider"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#slider"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./fatec vestibular.jpeg" class="d-block w-100" alt="Casa 1" />
+            <div class="carousel-caption">
+            
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./geee.jpeg" class="d-block w-100" alt="Casa 2" />
+            <div class="carousel-caption">
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./WhatsAppImage2021-11-16at201236.jpg" class="d-block w-100" alt="Casa 3" />
+            <div class="carousel-caption">
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#slider"
+          data-bs-slide="prev"
+        >
+          <i class="bi bi-chevron-compact-left"></i>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#slider"
+          data-bs-slide="next"
+        >
+          <i class="bi bi-chevron-compact-right"></i>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      
+    <!-- DESTAQUES -->
+    <div class="container" id="featured-container">
+      <div class="col-12">
+        <h2 class="title primary-color">Notícias Fatec</h2>
+        <p class="subtitle secondary-color">
+          Conheça nossos projetos mais desafiadores
+        </p>
+      </div>
+      <div class="col-12" id="featured-images">
+        <div class="row g-4">
+          <div class="col-12 col-md-4">
+            <img src="./fatec vestibular2.jpg" alt="Projeto 1" class="img-fluid"/>
+            <div class="banner-content">
+              <p class="secondary-color">
+              <h3>Inscreva-se no Vestibular</h3>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <img src="./WhatsApp_Image_2022-02-22_at_13.31.22.jpeg" alt="Projeto 2" class="img-fluid" />
+            <div class="banner-content">
+              <p class="secondary-color"></p>
+              <h3>Inscrições Inova</h3>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <img src="./Anúncio-WebSAI-2021-F.png" alt="Projeto 3" class="img-fluid"/>
+            <div class="banner-content">
+              <p class="secondary-color">
+              <h3>WebSAI 2021</h3>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <img src="./cronograma_vestibular_2022.jpg" alt="Projeto 4" class="img-fluid" />
+            <div class="banner-content">
+              <p class="secondary-color">
+              <h3>Cronograma Vestibular 2022</h3>
+           
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <img src="./vestibular imagem lapis.png" alt="Projeto 5" class="img-fluid" />
+            <div class="banner-content">
+              <p class="secondary-color">
+              <h3>Matrícula Vestibular 7ª Chamada</h3>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <img src="./Os véio no pc.png" alt="Projeto 6" class="img-fluid" />
+            <div class="banner-content">
+              <p class="secondary-color"></p>
+              <h3>Inclusão Digital 4ª Turma</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- INFO -->
+    <div class="container" id="info-container">
+      <div class="col-12">
+        <h2 class="title primary-color">Fatec Campinas</h2>
+        <p class="subtitle secondary-color">
+          Saiba mais sobre a experiência da nossa incrível equipe
+        </p>
+      </div>
+      <div class="col-12">
+        <div class="row">
+          <div class="col-12 col-md-5" id="info-banner">
+            <img src="./fatec-campinas.jpg" alt="Informações" class="img-fluid" />
+          </div>
+          <div class="col-12 col-md-7 bg-secondary-color" id="info-content">
+            <div class="row">
+              <div class="col-12">
+                <h2 class="secondary-color">Missão</h2>
+                <p class="subtitle secondary-color">
+Promover educação superior pública de qualidade, com excelência no ensino, pesquisa e extensão. Formar profissionais competentes, éticos e comprometidos com a sustentabilidade e a inovação.
+
+<h2 class="secondary-color">Visão</h2>
+<p class="subtitle secondary-color">
+Tornar-se referência no ensino superior tecnológico no estado de São Paulo</p>
+
+<h2 class="secondary-color">Valores</h2>
+<p class="subtitle secondary-color">
+Ética, responsabilidade social e ambiental, integridade, coerência.</p>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-md-10 offset-md-1" id="mini-banners">
+        <div class="row">
+          <div class="col-12 col-md-4">
+            <div class="card text-center">
+              <i class="fa fa-university"></i>
+              <div class="card-body">
+                <h5 class="card-title primary-color">Fatec Campinas</h5>
+                <p class="card-text secondary-color">
+                  <p><a href="http://www.fateccampinas.com.br/site/index.php?option=com_content&view=article&layout=edit&id=9">Sobre</a></p>
+                  <p><a href="http://www.fateccampinas.com.br/site/index.php?option=com_content&view=article&layout=edit&id=10">Endereço</a></p>
+                  <p><a href="http://www.cps.sp.gov.br/" target="_blank">Centro Paula Souza</a></p>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="card text-center">
+              <i class="fa fa-globe"></i>
+              <div class="card-body">
+                <h5 class="card-title primary-color">Acadêmico</h5>
+                <p class="card-text secondary-color">
+                  <p><a href="http://www.fateccampinas.com.br/site/index.php/institucional/professor/curriculo-lattes1">Docentes</a></p>
+
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="card text-center">
+              <i class="fa fa-cubes"></i>
+              <div class="card-body primary-color">
+                <h5 class="card-title primary-color">
+                  Campus Life
+                </h5>
+                <p class="card-text secondary-color">
+                  <p><a href="http://www.fateccampinas.com.br/site/index.php/calendario-de-eventos">Calendário de Eventos</a></p>
+
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- FOOTER -->
+    <footer class="container-fluid bg-dark-color" id="footer">
+      <div class="container">
+        <div class="row">
+          <!-- FOOTER TOP -->
+          <div class="col-12" id="footer-top">
+            <div class="row justify-content-between">
+              <div class="col-4">
+                <h2>
+                  Fatec Campinas
+                </h2>
+              </div>
+              <div class="col-4" id="social-icons">
+                <i class="bi bi-facebook"></i>
+               
+              </div>
+            </div>
+          </div>
+          <!-- FOOTER DETAILS -->
+          <div class="col-12" id="footer-details">
+            <div class="row">
+              <div class="col-12 col-md-4" id="news-container">
+                <h4>Localização</h4>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3676.3879687159074!2d-47.101248584398625!3d-22.86212234202792!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c8c701b143b069%3A0x590087383e5521b4!2sFatec%20Campinas%20-%20Faculdade%20de%20Tecnologia%20de%20Campinas!5e0!3m2!1spt-BR!2sbr!4v1668519671020!5m2!1spt-BR!2sbr" width="250" height="100" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <p class="secondary-color">
+                  Av. Cônego Antônio Roccato, 593 - Jardim Santa Monica, Campinas - SP, 13082-015
+               
+              </div>
+              <div class="col-12 col-md-4" id="contact-container">
+                <h4>Contato</h4>
+                <p class="secondary-color">Telefone: +55 (19)3216-6474</p>
+                
+              </div>
+              <div class="col-12 col-md-4" id="links-container">
+                <div class="row">
+                  <h4>Siga nossa página</h4>
+                  <div id="fb-root"></div>
+                  <div id="fb-root"></div>
+                  <div class="fb-page" data-href="https://www.facebook.com/fateccps" data-tabs="" data-width="300" data-height="" data-small-header="false" data-adapt-container-width="false" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/fateccps" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/fateccps">FATEC - Campinas</a></blockquote></div>
+              </div>
+              </div>
+            </div>
+          </div>
+          <!-- FOOTER BOTTOM -->
+          <div class="col-12" id="footer-bottom">
+            <div class="row justify-content-between">
+              <div class="col-12 col-md-3">
+                <p class="secondary-color">© 2022 Fatec Campinas-SP</p>
+              </div>
+              <div class="col-12 col-md-3">
+                <p class="secondary-color">
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
